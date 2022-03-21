@@ -18,7 +18,7 @@ sets Deployment annotations when specified:
       template:
         metadata:
           annotations:
-            checksum/config: 35cc6ed95ae9bbbbebce4e4fafa1c9684fc7a6b2ddcb35a44ed3f3a9c64b8879
+            checksum/config: d148f064da881c730716a3820da8e846aad891d18c0a6a4d18554b68980c2293
             kubernetes.io/pod: test-annotation
             kubernetes.io/pod-different: 4
           labels:
@@ -85,7 +85,7 @@ sets Pod annotations when specified:
       template:
         metadata:
           annotations:
-            checksum/config: 35cc6ed95ae9bbbbebce4e4fafa1c9684fc7a6b2ddcb35a44ed3f3a9c64b8879
+            checksum/config: d148f064da881c730716a3820da8e846aad891d18c0a6a4d18554b68980c2293
             kubernetes.io/pod: test-annotation
             kubernetes.io/pod-different: 4
           labels:
@@ -149,7 +149,7 @@ should add PersistentVolumeClaim as volume when in standalone mode:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -211,7 +211,7 @@ should add emptyDir for data in AWS mode:
       template:
         metadata:
           annotations:
-            checksum/config: 3c7b6f5c5283e73e5b68b818813503228e3323a9092805a27ac359ba3d2dc29f
+            checksum/config: a343fd32f34fdaed8bfd5a7a4122fda84073d66acc94c0c11c4768d3742c8c62
           labels:
             app: RELEASE-NAME
         spec:
@@ -284,7 +284,7 @@ should add emptyDir for data in GCP mode:
       template:
         metadata:
           annotations:
-            checksum/config: 7860161d0c13077d38858a303a793a0b5cfe0d38cc2c085414e34dba529cc6e6
+            checksum/config: 73838d47aa2f9a9af700a513b6546594e4cb7a9b0880260c9f7b3ff0b34b7eee
           labels:
             app: RELEASE-NAME
         spec:
@@ -421,7 +421,7 @@ should add insecureSkipProxyTLSVerify to args when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -484,7 +484,7 @@ should add named PersistentVolumeClaim as volume when in standalone mode and sta
       template:
         metadata:
           annotations:
-            checksum/config: 5e1c3e28a7dc5815203ada448e36f79607f8e7308f8732e7d049f1e44b312120
+            checksum/config: 90b3f00c6e658fcd54911351d555f0dd4d76b68389483281f875bd5dccae7560
           labels:
             app: RELEASE-NAME
         spec:
@@ -546,7 +546,7 @@ should do enterprise things when when enterprise is set in values:
       template:
         metadata:
           annotations:
-            checksum/config: df667419732ddf7ade5070ba488bc12cebeb29072dfd4eb2cf9a5214fdd165d6
+            checksum/config: 34c749ad7a88455c1c203fa79c9cfa68aa65e21f6389e96edf3b26a672a80578
           labels:
             app: RELEASE-NAME
         spec:
@@ -614,7 +614,7 @@ should expose diag port:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -749,7 +749,7 @@ should mount ConfigMap for config in AWS mode:
       template:
         metadata:
           annotations:
-            checksum/config: 3c7b6f5c5283e73e5b68b818813503228e3323a9092805a27ac359ba3d2dc29f
+            checksum/config: a343fd32f34fdaed8bfd5a7a4122fda84073d66acc94c0c11c4768d3742c8c62
           labels:
             app: RELEASE-NAME
         spec:
@@ -822,7 +822,7 @@ should mount ConfigMap for config in GCP mode:
       template:
         metadata:
           annotations:
-            checksum/config: 7860161d0c13077d38858a303a793a0b5cfe0d38cc2c085414e34dba529cc6e6
+            checksum/config: 73838d47aa2f9a9af700a513b6546594e4cb7a9b0880260c9f7b3ff0b34b7eee
           labels:
             app: RELEASE-NAME
         spec:
@@ -959,7 +959,7 @@ should mount ConfigMap for config in standalone mode:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -1021,7 +1021,7 @@ should mount GCP credentials for initContainer in GCP mode:
       template:
         metadata:
           annotations:
-            checksum/config: d500f89b1581e027a502c2fac36c06b0ae973de64a8d12611702701ea615be0a
+            checksum/config: 4069a40ce7f62879cf243d26055d7434813bbb6a8e6f332d236d2b82ec29ba09
           labels:
             app: RELEASE-NAME
         spec:
@@ -1111,7 +1111,7 @@ should mount GCP credentials in GCP mode:
       template:
         metadata:
           annotations:
-            checksum/config: 7860161d0c13077d38858a303a793a0b5cfe0d38cc2c085414e34dba529cc6e6
+            checksum/config: 73838d47aa2f9a9af700a513b6546594e4cb7a9b0880260c9f7b3ff0b34b7eee
           labels:
             app: RELEASE-NAME
         spec:
@@ -1187,7 +1187,7 @@ should mount TLS certs for initContainer when cert-manager is enabled:
       template:
         metadata:
           annotations:
-            checksum/config: cf089ed888d98d4ca45d59a2ee015579370c1e00cb53a89793969b30c5234451
+            checksum/config: c3fdd8d4abfaf54eea8c29595363b28292ddec27bbb946046cc4de80c1b71bfa
           labels:
             app: RELEASE-NAME
         spec:
@@ -1286,7 +1286,7 @@ should mount TLS certs when cert-manager is enabled:
       template:
         metadata:
           annotations:
-            checksum/config: 86d88c5cb948c27a7ed679c5c68698ef8d124361bcba7fd62735d99176cc21c2
+            checksum/config: a64e6a70ffb642c473538081464665de71c803e9e870f63e5b03c5ddece27adc
           labels:
             app: RELEASE-NAME
         spec:
@@ -1368,7 +1368,7 @@ should mount extraVolumes and extraVolumeMounts:
       template:
         metadata:
           annotations:
-            checksum/config: 5ffc3d652d8c34499967db353b39c34b66ec1e0178abcbea2ea471b4613ee605
+            checksum/config: e1303697b1ade99433ca962dd8630edd834818315950cf3b09c2626307d64199
           labels:
             app: RELEASE-NAME
         spec:
@@ -1435,7 +1435,7 @@ should not do enterprise things when when enterprise is not set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 5ffc3d652d8c34499967db353b39c34b66ec1e0178abcbea2ea471b4613ee605
+            checksum/config: e1303697b1ade99433ca962dd8630edd834818315950cf3b09c2626307d64199
           labels:
             app: RELEASE-NAME
         spec:
@@ -1497,7 +1497,7 @@ should not have more than one replica in standalone mode:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -1559,7 +1559,7 @@ should provision initContainer correctly when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 5ffc3d652d8c34499967db353b39c34b66ec1e0178abcbea2ea471b4613ee605
+            checksum/config: e1303697b1ade99433ca962dd8630edd834818315950cf3b09c2626307d64199
           labels:
             app: RELEASE-NAME
         spec:
@@ -1719,7 +1719,7 @@ should set environment when extraEnv set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -1784,7 +1784,7 @@ should set imagePullPolicy when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -1846,7 +1846,7 @@ should set postStart command if set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 02e900883a5cbf51b02418a1bc6d117a08cb373da148b14b1f926d3ba0e5735d
+            checksum/config: f6f8d1a836e3278a991ee83834eb1a318e9def808a2f9e8a39930be8be7a5bf3
           labels:
             app: RELEASE-NAME
         spec:
@@ -1914,7 +1914,7 @@ should set priorityClassName when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 5ffc3d652d8c34499967db353b39c34b66ec1e0178abcbea2ea471b4613ee605
+            checksum/config: e1303697b1ade99433ca962dd8630edd834818315950cf3b09c2626307d64199
           labels:
             app: RELEASE-NAME
         spec:
@@ -1977,7 +1977,7 @@ should set required affinity when highAvailability.requireAntiAffinity is set:
       template:
         metadata:
           annotations:
-            checksum/config: 3c7b6f5c5283e73e5b68b818813503228e3323a9092805a27ac359ba3d2dc29f
+            checksum/config: a343fd32f34fdaed8bfd5a7a4122fda84073d66acc94c0c11c4768d3742c8c62
           labels:
             app: RELEASE-NAME
         spec:
@@ -2048,7 +2048,7 @@ should set resources when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 5ffc3d652d8c34499967db353b39c34b66ec1e0178abcbea2ea471b4613ee605
+            checksum/config: e1303697b1ade99433ca962dd8630edd834818315950cf3b09c2626307d64199
           labels:
             app: RELEASE-NAME
         spec:
@@ -2117,7 +2117,7 @@ should set tolerations when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 2f8462f0dc120a8666b7f1c0acb0dbf391095cea02ad5ddd2d225a9e3f552ad4
+            checksum/config: bd059342d65e3825963254fe56b4288b3fb4e2566c3c1cecef7689317cdfe299
           labels:
             app: RELEASE-NAME
         spec:
