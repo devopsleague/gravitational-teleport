@@ -18,7 +18,7 @@ sets Deployment annotations when specified:
       template:
         metadata:
           annotations:
-            checksum/config: adbe9a136a1f161df9b830b7e04a05d91d808e4a5d37350266a9730b791dabc6
+            checksum/config: d4b68af041b4bf4aa8cb4ea527c775607b7062d3565b5b3220a0b5bbe16afa23
             kubernetes.io/pod: test-annotation
             kubernetes.io/pod-different: 4
           labels:
@@ -95,7 +95,7 @@ sets Pod annotations when specified:
       template:
         metadata:
           annotations:
-            checksum/config: adbe9a136a1f161df9b830b7e04a05d91d808e4a5d37350266a9730b791dabc6
+            checksum/config: d4b68af041b4bf4aa8cb4ea527c775607b7062d3565b5b3220a0b5bbe16afa23
             kubernetes.io/pod: test-annotation
             kubernetes.io/pod-different: 4
           labels:
@@ -169,7 +169,7 @@ should add emptyDir for data when existingDataVolume is not set:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -241,7 +241,7 @@ should add insecureSkipProxyTLSVerify to args when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -314,7 +314,7 @@ should correctly configure existingDataVolume when set:
       template:
         metadata:
           annotations:
-            checksum/config: 2c9e2e0426ef51303e16333b07163365428483c3916b061d1ce7a5355d58f778
+            checksum/config: 0623cbd3d62f5ae8b536ada3da5fa175f71e8bc7d69ca006e23f822365f26161
           labels:
             app: RELEASE-NAME
         spec:
@@ -384,7 +384,7 @@ should expose diag port:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -456,7 +456,7 @@ should have multiple replicas when replicaCount is set (using .replicaCount, dep
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -540,7 +540,7 @@ should have multiple replicas when replicaCount is set (using highAvailability.r
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -624,7 +624,7 @@ should have one replica when replicaCount is not set:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -696,7 +696,7 @@ should mount extraVolumes and extraVolumeMounts:
       template:
         metadata:
           annotations:
-            checksum/config: 2c9e2e0426ef51303e16333b07163365428483c3916b061d1ce7a5355d58f778
+            checksum/config: 0623cbd3d62f5ae8b536ada3da5fa175f71e8bc7d69ca006e23f822365f26161
           labels:
             app: RELEASE-NAME
         spec:
@@ -773,7 +773,7 @@ should provision initContainer correctly when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 2c9e2e0426ef51303e16333b07163365428483c3916b061d1ce7a5355d58f778
+            checksum/config: 0623cbd3d62f5ae8b536ada3da5fa175f71e8bc7d69ca006e23f822365f26161
           labels:
             app: RELEASE-NAME
         spec:
@@ -881,7 +881,7 @@ should set SecurityContext:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -953,7 +953,7 @@ should set affinity when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 2c9e2e0426ef51303e16333b07163365428483c3916b061d1ce7a5355d58f778
+            checksum/config: 0623cbd3d62f5ae8b536ada3da5fa175f71e8bc7d69ca006e23f822365f26161
           labels:
             app: RELEASE-NAME
         spec:
@@ -1045,7 +1045,7 @@ should set default serviceAccountName when not set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -1117,7 +1117,7 @@ should set environment when extraEnv set in values:
       template:
         metadata:
           annotations:
-            checksum/config: a0e194d315c4d1a73f7c1b7a276bfcbb74aef2b03f7529e393844bdda44abb72
+            checksum/config: d0db9d7697d1c3abcc7756dc6d72364ea76448c31894056e511fe7d113f39648
           labels:
             app: RELEASE-NAME
         spec:
@@ -1192,7 +1192,7 @@ should set image and tag correctly:
       template:
         metadata:
           annotations:
-            checksum/config: e853ab9f90fe642bd0a1efb48b881e6da55d1ff9903c11e7713f30a4bdde2935
+            checksum/config: b68f736b13876b204549cacfa6683f63942acdfe1e98c43d74f9868eb8f1edff
           labels:
             app: RELEASE-NAME
         spec:
@@ -1264,7 +1264,7 @@ should set imagePullPolicy when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -1336,7 +1336,7 @@ should set nodeSelector if set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -1410,7 +1410,7 @@ should set preferred affinity when more than one replica is used:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -1494,7 +1494,7 @@ should set required affinity when highAvailability.requireAntiAffinity is set:
       template:
         metadata:
           annotations:
-            checksum/config: 9df339832853cbe02d36960c7beff63e9f848aa56c8745a853dbd912d0f05be4
+            checksum/config: 4e3d4cbd8163fcd955cd7f8f13e88ccdef04a77ae689d1ec48dce37465d71d4f
           labels:
             app: RELEASE-NAME
         spec:
@@ -1576,7 +1576,7 @@ should set resources when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 2c9e2e0426ef51303e16333b07163365428483c3916b061d1ce7a5355d58f778
+            checksum/config: 0623cbd3d62f5ae8b536ada3da5fa175f71e8bc7d69ca006e23f822365f26161
           labels:
             app: RELEASE-NAME
         spec:
@@ -1655,7 +1655,7 @@ should set serviceAccountName when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 2c9e2e0426ef51303e16333b07163365428483c3916b061d1ce7a5355d58f778
+            checksum/config: 0623cbd3d62f5ae8b536ada3da5fa175f71e8bc7d69ca006e23f822365f26161
           labels:
             app: RELEASE-NAME
         spec:
@@ -1727,7 +1727,7 @@ should set tolerations when set in values:
       template:
         metadata:
           annotations:
-            checksum/config: 2c9e2e0426ef51303e16333b07163365428483c3916b061d1ce7a5355d58f778
+            checksum/config: 0623cbd3d62f5ae8b536ada3da5fa175f71e8bc7d69ca006e23f822365f26161
           labels:
             app: RELEASE-NAME
         spec:
